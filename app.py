@@ -116,6 +116,11 @@ st.markdown("""
         border-radius: 18px;
         padding: 28px 30px;
         border: 1px solid #D8E8F4;
+        display: flex;
+        flex-direction: column;
+    }
+    .criteria-card .warn-box {
+        margin-top: auto;
     }
     .c-title-row {
         display: flex;
