@@ -119,9 +119,6 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    .criteria-card .warn-box {
-        margin-top: auto;
-    }
     .c-title-row {
         display: flex;
         align-items: center;
@@ -152,6 +149,7 @@ st.markdown("""
         border-top: 1px solid #EEF4FA;
         padding-top: 12px;
         margin-bottom: 14px;
+        min-height: 72px;
     }
     .sub-row {
         display: flex;
