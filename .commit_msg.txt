@@ -1,0 +1,5 @@
+fix: 업로드 버튼 span 숨김 문제 수정
+
+버튼 내부 span까지 숨겨지던 CSS 선택자를 stFileUploaderDropzoneInstructions 범위로 좁힘
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
