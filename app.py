@@ -185,12 +185,15 @@ st.markdown("""
         box-shadow: 0 4px 24px rgba(13,46,82,0.09) !important;
         margin-bottom: 0 !important;
         transition: box-shadow 0.2s !important;
+        height: 100% !important;
     }
     [data-testid="stVerticalBlockBorderWrapper"]:hover {
         box-shadow: 0 8px 32px rgba(13,46,82,0.14) !important;
     }
     [data-testid="stVerticalBlockBorderWrapper"] > div {
         padding: 24px 20px 20px !important;
+        height: 100% !important;
+        box-sizing: border-box !important;
     }
 
     /* 업로드 카드 헤더 */
@@ -241,40 +244,39 @@ st.markdown("""
         text-align: center !important;
         transition: border-color 0.2s, background 0.2s !important;
         cursor: pointer !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-height: 80px !important;
     }
     [data-testid="stFileUploaderDropzone"]:hover {
         border-color: #1276B8 !important;
         background: #EEF4FA !important;
     }
+    /* 파일형식·용량 텍스트 숨김 */
+    [data-testid="stFileUploaderDropzone"] small,
+    [data-testid="stFileUploaderDropzone"] span,
     [data-testid="stFileUploaderDropzoneInstructions"] {
-        display: flex;
-        flex-direction: column;
-        align-items: center !important;
-        gap: 8px;
+        display: none !important;
     }
-    [data-testid="stFileUploaderDropzoneInstructions"] span {
-        font-size: 0.78rem !important;
-        color: #9DBAD4 !important;
-    }
-    /* 업로드 버튼 */
+    /* 업로드 버튼 — 단독 노출 및 중앙 정렬 */
     [data-testid="stFileUploaderDropzone"] button {
+        display: block !important;
         background: linear-gradient(135deg, #1276B8, #0D2E52) !important;
         color: white !important;
         border: none !important;
         border-radius: 100px !important;
         font-weight: 700 !important;
         font-size: 0.82rem !important;
-        padding: 7px 22px !important;
+        padding: 10px 32px !important;
         width: auto !important;
+        margin: 0 auto !important;
     }
     /* 업로드된 파일 리스트 */
     [data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] {
         border-radius: 8px !important;
         border: 1px solid #D8E8F4 !important;
         background: white !important;
-    }
-    [data-testid="stFileUploaderDropzoneInstructions"] small {
-        display: none !important;
     }
 
     /* 섹션 타이틀 (채점 기준용) */
