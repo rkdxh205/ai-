@@ -1,5 +1,6 @@
-style: 채점 기준 카드 감점 포인트 박스 하단 정렬 통일
+fix: PDF 폰트를 번들 NanumGothic으로 교체 (크로스 플랫폼)
 
-criteria-card에 flexbox 적용 후 warn-box margin-top:auto로 위치 통일
+Windows 전용 맑은고딕 절대경로 대신 프로젝트 내 fonts/ 폴더의
+NanumGothic을 사용해 어떤 컴퓨터에서도 PDF 생성 가능하도록 수정
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
