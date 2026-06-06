@@ -1,6 +1,5 @@
-fix: PDF 폰트를 번들 NanumGothic으로 교체 (크로스 플랫폼)
+style: 감점 포인트 박스 상단 위치 통일
 
-Windows 전용 맑은고딕 절대경로 대신 프로젝트 내 fonts/ 폴더의
-NanumGothic을 사용해 어떤 컴퓨터에서도 PDF 생성 가능하도록 수정
+sub-scores에 min-height 72px 고정으로 세부항목 수 관계없이 warn-box 시작 높이 통일
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
