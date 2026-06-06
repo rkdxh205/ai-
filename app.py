@@ -149,7 +149,8 @@ st.markdown("""
         border-top: 1px solid #EEF4FA;
         padding-top: 12px;
         margin-bottom: 14px;
-        min-height: 84px;
+        flex: 0 0 96px;
+        overflow: hidden;
     }
     .sub-row {
         display: flex;
@@ -170,8 +171,16 @@ st.markdown("""
         border-radius: 10px;
         padding: 12px 16px;
         margin-top: 12px;
-        min-height: 120px;
+        flex: 1;
         box-sizing: border-box;
+    }
+    /* 창의성 전폭 카드는 고정 해제 */
+    .criteria-card:last-child .sub-scores {
+        flex: 0 0 auto;
+        overflow: visible;
+    }
+    .criteria-card:last-child .warn-box {
+        flex: 0 0 auto;
     }
     .warn-box .warn-title {
         font-size: 0.92rem;
