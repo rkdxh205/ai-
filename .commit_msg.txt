@@ -1,3 +1,5 @@
-style: 추가 파일 카드 별표 문구 제거 및 헤더 높이 원복
+style: 채점 기준 카드 감점 포인트 박스 하단 정렬 통일
+
+criteria-card에 flexbox 적용 후 warn-box margin-top:auto로 위치 통일
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
