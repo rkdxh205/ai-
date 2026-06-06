@@ -202,11 +202,6 @@ st.markdown("""
         padding-bottom: 16px;
         border-bottom: 1px solid #EEF4FA;
         margin-bottom: 16px;
-        min-height: 128px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
     }
     .upload-icon-wrap {
         font-size: 2.2rem;
@@ -939,7 +934,6 @@ with col3:
   <div class="upload-icon-wrap">📎</div>
   <div class="upload-title">추가 파일</div>
   <div class="upload-desc">프롬프트 · README</div>
-  <div class="upload-desc" style="margin-top:4px;font-size:0.68rem;color:#E8A830">★ 점수에 직접 영향을 줍니다</div>
 </div>""", unsafe_allow_html=True)
         extra_files = st.file_uploader(
             "추가 파일 업로드",
