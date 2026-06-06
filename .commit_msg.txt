@@ -1,5 +1,5 @@
-fix: 업로드 버튼 span 숨김 문제 수정
+style: 업로드 카드 헤더 높이 통일
 
-버튼 내부 span까지 숨겨지던 CSS 선택자를 stFileUploaderDropzoneInstructions 범위로 좁힘
+세 번째 카드의 추가 설명 줄로 인한 높이 불일치를 min-height 고정으로 해결
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
