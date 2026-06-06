@@ -778,7 +778,7 @@ def run_evaluation(api_key: str, activity_plan: str, code_content: str, extra_co
 api_key = os.environ.get("OPENAI_API_KEY", "")
 
 # 로고 base64 인코딩
-_logo_path = os.path.join(os.path.dirname(__file__), "이노커브AI 로고 세로.png")
+_logo_path = os.path.join(os.path.dirname(__file__), "이노커브AI 로고.png")
 with open(_logo_path, "rb") as _f:
     _logo_b64 = base64.b64encode(_f.read()).decode()
 
