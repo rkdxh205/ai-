@@ -253,10 +253,10 @@ st.markdown("""
         border-color: #1276B8 !important;
         background: #EEF4FA !important;
     }
-    /* 파일형식·용량 텍스트 숨김 */
-    [data-testid="stFileUploaderDropzone"] small,
-    [data-testid="stFileUploaderDropzone"] span,
-    [data-testid="stFileUploaderDropzoneInstructions"] {
+    /* 파일형식·용량 텍스트 숨김 (버튼 내부 span은 유지) */
+    [data-testid="stFileUploaderDropzoneInstructions"],
+    [data-testid="stFileUploaderDropzoneInstructions"] span,
+    [data-testid="stFileUploaderDropzone"] small {
         display: none !important;
     }
     /* 업로드 버튼 — 단독 노출 및 중앙 정렬 */
