@@ -273,9 +273,8 @@ st.markdown("""
         border: 1px solid #D8E8F4 !important;
         background: white !important;
     }
-    [data-testid="stFileUploader"] small {
-        text-align: center;
-        color: #9DBAD4 !important;
+    [data-testid="stFileUploaderDropzoneInstructions"] small {
+        display: none !important;
     }
 
     /* 섹션 타이틀 (채점 기준용) */
@@ -895,7 +894,6 @@ with col1:
   <div class="upload-icon-wrap">📋</div>
   <div class="upload-title">활동계획서 (기획)</div>
   <div class="upload-desc">문제 정의 · 솔루션 · 기대 효과</div>
-  <div class="upload-desc" style="margin-top:4px;font-size:0.68rem">.docx &nbsp;·&nbsp; .txt &nbsp;·&nbsp; .md</div>
 </div>""", unsafe_allow_html=True)
         plan_files = st.file_uploader(
             "활동계획서 업로드",
@@ -915,7 +913,6 @@ with col2:
   <div class="upload-icon-wrap">💻</div>
   <div class="upload-title">앱 소스코드</div>
   <div class="upload-desc">구현된 AI 앱 · 스크립트 · 설정</div>
-  <div class="upload-desc" style="margin-top:4px;font-size:0.68rem">.py &nbsp;·&nbsp; .md &nbsp;·&nbsp; .json &nbsp;·&nbsp; .yaml &nbsp;·&nbsp; .toml</div>
 </div>""", unsafe_allow_html=True)
         code_files = st.file_uploader(
             "소스코드 업로드",
@@ -934,7 +931,7 @@ with col3:
 <div class="upload-header">
   <div class="upload-icon-wrap">📎</div>
   <div class="upload-title">추가 파일</div>
-  <div class="upload-desc">프롬프트 · README · requirements</div>
+  <div class="upload-desc">프롬프트 · README</div>
   <div class="upload-desc" style="margin-top:4px;font-size:0.68rem;color:#E8A830">★ 점수에 직접 영향을 줍니다</div>
 </div>""", unsafe_allow_html=True)
         extra_files = st.file_uploader(
