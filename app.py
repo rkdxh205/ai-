@@ -657,8 +657,9 @@ def generate_pdf(markdown_text: str) -> bytes:
     pdf.set_margins(left=20, top=20, right=20)
     pdf.set_auto_page_break(auto=True, margin=20)
     pdf.add_page()
-    pdf.add_font("Malgun", style="", fname="C:/Windows/Fonts/malgun.ttf")
-    pdf.add_font("Malgun", style="B", fname="C:/Windows/Fonts/malgunbd.ttf")
+    _base = os.path.dirname(os.path.abspath(__file__))
+    pdf.add_font("Malgun", style="", fname=os.path.join(_base, "fonts", "NanumGothic-Regular.ttf"))
+    pdf.add_font("Malgun", style="B", fname=os.path.join(_base, "fonts", "NanumGothic-Bold.ttf"))
 
     pw = pdf.w - pdf.l_margin - pdf.r_margin
 
