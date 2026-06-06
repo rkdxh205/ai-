@@ -1,6 +1,6 @@
-style: 감점 박스 위치 및 크기 완전 통일
+style: 채점 카드 세부항목·감점박스 위치·크기 완전 통일
 
-sub-scores min-height 84px, warn-box min-height 120px 고정으로
-세부항목 수 무관하게 감점 박스 시작 위치와 크기를 동일하게 맞춤
+sub-scores flex:0 0 96px 고정으로 감점박스 시작 위치 통일,
+warn-box flex:1로 나머지 공간 균등 분배, 전폭 카드는 별도 해제
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
