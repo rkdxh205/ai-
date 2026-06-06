@@ -202,6 +202,11 @@ st.markdown("""
         padding-bottom: 16px;
         border-bottom: 1px solid #EEF4FA;
         margin-bottom: 16px;
+        min-height: 128px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
     .upload-icon-wrap {
         font-size: 2.2rem;
