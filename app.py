@@ -149,7 +149,7 @@ st.markdown("""
         border-top: 1px solid #EEF4FA;
         padding-top: 12px;
         margin-bottom: 14px;
-        min-height: 72px;
+        min-height: 84px;
     }
     .sub-row {
         display: flex;
@@ -170,6 +170,8 @@ st.markdown("""
         border-radius: 10px;
         padding: 12px 16px;
         margin-top: 12px;
+        min-height: 120px;
+        box-sizing: border-box;
     }
     .warn-box .warn-title {
         font-size: 0.92rem;
