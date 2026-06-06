@@ -679,6 +679,7 @@ def generate_pdf(markdown_text: str) -> bytes:
         text = re.sub(r'\*\*(.+?)\*\*', r'\1', text)
         text = re.sub(r'\*(.+?)\*', r'\1', text)
         text = re.sub(r'`(.+?)`', r'\1', text)
+        text = re.sub(r'~~(.+?)~~', r'\1', text)
         text = text.replace('✅', '[O]').replace('❌', '[X]')
         for ch in ('📊', '💡', '🚀', '📝', '🏆'):
             text = text.replace(ch, '')
@@ -1058,10 +1059,12 @@ if start_btn:
                             s = f'<p style="font-size:1.2rem;font-weight:800;color:#0D2E52;margin:16px 0 6px 0">{clean}</p>'
                         elif s.startswith(('- ', '* ', '• ')):
                             content = s[2:]
+                            content = re.sub(r'~~(.+?)~~', r'\1', content)
                             content = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', content)
                             s = f'<p style="font-size:1.05rem;color:#374151;margin:6px 0 6px 14px;line-height:1.75">• {content}</p>'
                         elif re.match(r'^\d+\.', s):
-                            content = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
+                            content = re.sub(r'~~(.+?)~~', r'\1', s)
+                            content = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', content)
                             s = f'<p style="font-size:1.05rem;color:#374151;margin:10px 0 6px 0;line-height:1.7">{content}</p>'
                         processed_lines.append(s)
                     display_result = '\n'.join(processed_lines).strip()
