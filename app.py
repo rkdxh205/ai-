@@ -789,7 +789,7 @@ st.markdown(f"""
   </div>
   <div class="hero-divider"></div>
   <h1>AI 활용 업무 혁신<br>해커톤 심사 시스템</h1>
-  <p>GPT-4o 수석 심사위원 AI &nbsp;·&nbsp; 5개 기준 &nbsp;·&nbsp; 100점 만점 자동 채점</p>
+  <p>AI 기반 전문 심사 &nbsp;·&nbsp; 5개 평가 영역 &nbsp;·&nbsp; 100점 만점 정밀 분석</p>
   <div class="hero-stats">
     <div class="hero-stat"><div class="stat-val">100</div><div class="stat-lbl">총점</div></div>
     <div class="hero-stat"><div class="stat-val">5</div><div class="stat-lbl">평가 기준</div></div>
