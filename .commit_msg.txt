@@ -1,6 +1,6 @@
-feat: AI 기술 활용 및 구현력 세부항목 분리
+feat: AI 기술 활용 및 구현력 세부항목 3분할
 
-AI 기술 적절성 15점 단일 → AI 기술 적절성(8점) + 구현 완성도(7점)으로 분리
+AI 기술 적절성(5) + 프롬프트 설계 수준(5) + 구현 완성도(5) = 15점
 루브릭, 출력 형식, UI 카드 모두 반영
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
