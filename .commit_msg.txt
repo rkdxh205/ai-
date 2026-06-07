@@ -1,6 +1,5 @@
-feat: AI 기술 활용 및 구현력 세부항목 3분할
+refactor: 코드 구조·가독성 루브릭 유연하게 완화
 
-AI 기술 적절성(5) + 프롬프트 설계 수준(5) + 구현 완성도(5) = 15점
-루브릭, 출력 형식, UI 카드 모두 반영
+requirements.txt 제외, 중간 점수대 기준 완화로 유연한 채점 가능하도록 수정
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
