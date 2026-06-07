@@ -1,5 +1,5 @@
-style: 히어로 서브타이틀 문구 전문성 있게 변경
+style: 구분선 색상 진하게 통일
 
-GPT-4o 모델명 제거, AI 기반 전문 심사 · 5개 평가 영역 · 100점 만점 정밀 분석으로 수정
+#EEF4FA → #C8DEF0, #D8E8F4 → #AABFD4 로 변경하여 구분선 가시성 개선
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
