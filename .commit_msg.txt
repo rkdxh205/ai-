@@ -1,5 +1,6 @@
-style: 구분선 색상 진하게 통일
+feat: AI 기술 활용 및 구현력 세부항목 분리
 
-#EEF4FA → #C8DEF0, #D8E8F4 → #AABFD4 로 변경하여 구분선 가시성 개선
+AI 기술 적절성 15점 단일 → AI 기술 적절성(8점) + 구현 완성도(7점)으로 분리
+루브릭, 출력 형식, UI 카드 모두 반영
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
