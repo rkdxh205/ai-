@@ -86,7 +86,7 @@ st.markdown("""
         gap: 40px;
         margin-top: 28px;
         padding-top: 24px;
-        border-top: 1px solid #EEF4FA;
+        border-top: 1px solid #C8DEF0;
     }
     .hero-stat { text-align: center; }
     .hero-stat .stat-val {
@@ -146,7 +146,7 @@ st.markdown("""
         flex-shrink: 0;
     }
     .sub-scores {
-        border-top: 1px solid #EEF4FA;
+        border-top: 1px solid #C8DEF0;
         padding-top: 12px;
         margin-bottom: 14px;
         flex: 0 0 96px;
@@ -214,7 +214,7 @@ st.markdown("""
     .upload-header {
         text-align: center;
         padding-bottom: 16px;
-        border-bottom: 1px solid #EEF4FA;
+        border-bottom: 1px solid #C8DEF0;
         margin-bottom: 16px;
     }
     .upload-icon-wrap {
@@ -301,7 +301,7 @@ st.markdown("""
         letter-spacing: -0.02em;
         margin: 0 0 10px 0;
         padding-bottom: 10px;
-        border-bottom: 1px solid #EEF4FA;
+        border-bottom: 1px solid #C8DEF0;
     }
 
     /* 점수 히어로 카드 */
@@ -385,7 +385,7 @@ st.markdown("""
         background: white !important;
     }
 
-    hr { border-color: #D8E8F4; margin: 24px 0; }
+    hr { border-color: #AABFD4; margin: 24px 0; }
 
     /* 스피너 하단 중앙 고정 */
     [data-testid="stSpinner"],
@@ -1047,7 +1047,7 @@ if start_btn:
                     for line in filtered_lines:
                         s = line.strip()
                         if s == '---':
-                            s = '<hr style="border:none;border-top:2px solid #D8E8F4;margin:24px 0">'
+                            s = '<hr style="border:none;border-top:2px solid #AABFD4;margin:24px 0">'
                         elif s.startswith('#### '):
                             s = f'<h4 style="font-size:1.05rem;font-weight:700;color:#1276B8;margin:14px 0 6px">{s[5:]}</h4>'
                         elif s.startswith('### '):
